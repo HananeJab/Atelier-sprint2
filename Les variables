@@ -1,0 +1,42 @@
+## Exercice 1 : Installation de l’environnement de travail
+
+- Utilisateurs Windows :
+    1. Télécharger la version **PHP** 7.4.15 depuis le site officiel de [**PHP](https://www.php.net/).**
+    2. Décompressez le fichier sur un emplacement de votre choix. De préférence dans le dossier `programme files`.
+    3. Ajoutez PHP dans les variables d’environnement pour pouvoir utiliser les commandes **PHP** sur votre terminal.
+    4. Lancez le terminal et vérifiez si **PHP** est correctement installer en lançant la commande `php -v`. Cette commande devrais retourner la version installée de **PHP**.
+    
+    Alternativement, vous pouvez installer **WAMP** ou **XAMPP**. Toutes ces options fonctionneront parfaitement. 
+    
+- Utilisateur Linux :
+    1. Tout d’abord, vérifier la version actuelle de **PHP**. Si vous avez **Ubuntu 20.04**, vous devez avoir la version 8 de **PHP**. Désinstaller la et installer la version 7.4 de **PHP**.
+    2. Confirmez l'installation correcte de **PHP** avec la commande `php -v`.
+    3. Regardez cette [vidéo tutoriel](https://youtu.be/TrLAx27Npns) ou cet [article](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04) pour installer et configurer **Apache**, **MySQL** (vous pouvez traiter cette partie ultérieurement) et **PHP**. Vous devrez être capable créer/supprimer un projet avec son nom de domaine en une seule commande.
+
+## Exercice 2 : Premier code en PHP
+
+1. Écrire un script PHP permettant d'afficher la phrase `Hello YouCode` sur le terminal. (mots clés: `php` `echo` `<?php` `?>`)
+2. Écrire un script PHP permettant d'afficher la phrase `Hello YouCode` sur le navigateur. (mots clés: `php` `echo` `<?php` `?>`). (pour les utilisateur Windows vous pouvez vous servir de la commande `php -S` pour lancer un serveur virtuel de **PHP** dans le dossier du fichier.
+
+**Terminologies : `LAMP` `WAMP` `XAMPP` `localhost` `virtualhost` `server` `PHP` `apache` `MySQL`**
+
+## Exercice 3 : Assigner et utiliser des variables
+
+Écrire un script PHP permettant votre nom, votre prénom et votre age. Pour faire cela, vous devez :
+
+1. Créer trois variables `$monNom`,  `$monPrenom` et `$monAge`. Ces variables contiennent respectivement, votre nom, votre prénom et votre age.
+2. Afficher ces informations dans le navigateur en utilisant `echo` et `""`. 
+3. Afficher ces informations dans le navigateur en utilisant `echo` et `''`. 
+4. Qu'elle est la différence entre `""` et `''`?
+5. Afficher ces informations dans le navigateur en utilisant le syntaxe `Heredoc`. 
+6. Afficher ces informations dans le navigateur en utilisant le syntaxe `Nowdoc`. 
+7. Qu'elle est l'avantage de ces deux syntaxe et qu'elle est la différence entre les deux?
+
+**Terminologies : `variables` `declaration` `assignement` `types` `string` `string parsing` `heredoc` `nowdoc`** 
+
+## Exercice 4 : Conversions
+
+Écrire le script PHP permettant de :
+
+1. Convertir un booléen en entier `int`
+2. Convertir un entier en chaîne de caractères `string`.
