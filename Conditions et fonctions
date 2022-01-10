@@ -1,0 +1,95 @@
+## Exercice 9 : conditions et Booleans
+
+1. Créer un tableau associatif pour une tâche. Ce tableau doit inclure des détails tels que le titre de la tâche `title`, sa date de fin `due`, le nom de la personne à qui elle est assignée `assigned_to` et si elle a été achevée `done`. la valeur de `done` devrait être de type **booléen.**
+2. Afficher le détail de la tâche sous format liste **HTML.** Si la valeur de `done` est `true` afficher **Done.** Si non afficher **Doing**.
+3. **Challenge :** créer un tableau associatif pour plusieurs tâches et afficher le détail des tâches qui n'ont pas encore été complété.
+
+**Terminologies : `array` `foreach` `separation of concerns` `li` `ul` `endforeach` `key => value` `nested associative arrays` `if` `else` `ternary`**
+
+## Exercice 11 : les fonctions
+
+- Explication
+    
+    En termes simples, un appel est une partie de votre code que vous pouvez "appeler". Lorsque nous disons que vous pouvez "appeler" quelque chose, nous voulons dire que vous pouvez dire au programme de l'exécuter.
+    
+    Un appel peut être écrit avec des parenthèses, par exemple, `functionName().`
+    
+    Comme décrit précédemment, une fonction est un type de callable, donc une fonction peut être appelée (c'est-à-dire que vous pouvez dire à votre programme de l'exécuter).
+    
+    Voici un exemple : 
+    
+    ```php
+    function howManyTimesDidWeTellYou(int $numberOfTimes): string
+    {
+        return "You told me $numberOfTimes times";
+    }
+    ```
+    
+    Ne vous préoccupez pas des détails de la fonction pour l'instant - nous entrerons dans le vif du sujet plus tard. Cette fonction peut être définie n'importe où dans votre code, mais supposons qu'elle soit définie dans un script appelé how-many-times-did-we-tell-you.php.
+    
+    Le contenu du script ressemblerait alors à ceci :
+    
+    ```php
+    <?php
+    declare(strict_types=1);
+    function howManyTimesDidWeTellYou(int $numberOfTimes): string
+    {
+        return "You told me {$numberOfTimes} times";
+    }
+    ```
+    
+    La fonction prend un seul paramètre, `$numberOfTimes`, qui doit être du type `int` (entier), et elle renvoie une chaîne de caractères. L'indice du type `int` et le type de retour de la chaîne de caractères sont facultatifs. Maintenant, la fonction `howManyTimesDidWeTellYou(int $numberOfTimes) : string` n'est que la déclaration de la fonction : elle définit la fonction. Le script lui-même ne fait encore rien.
+    
+    Pour que la fonction puisse réellement faire quelque chose, nous devons l'appeler à partir de notre code. Il est parfaitement valable de continuer dans le même fichier de script et d'appeler la fonction que nous venons de définir comme suit :
+    
+    ```php
+    echo howManyTimesDidWeTellYou(1);
+    echo PHP_EOL (PHP_EOL est une constante predifinie en PHP pour faire un break line)
+    ```
+    
+1. Rédigez une fonction qui détermine si un âge donné (envoyé comme argument) est assez élevé pour s'inscrire à **YouCode** (entre 18 ans et 35 ans). Demandez à cette fonction de renvoyer un booléen, qui peut être utilisé dans n'importe quel conditionnel.
+
+**Terminologies : `function` `arguments` `logical operators` `comparison operators`**
+
+## Exercice 12 : les fonctions prédéfinies
+
+- Explication
+    
+    En PHP on trouve des milliers de fonctions  prédéfinies qu'on peut les utiliser afin de nous faciliter le travail . voici quelques exemples des fonctions prédéfinies en `PHP`  :
+    
+    - [**String functions**](https://www.w3schools.com/php/php_ref_string.asp)
+    - [**Math functions**](https://www.w3schools.com/php/php_ref_math.asp)
+    - [**Date functions**](https://www.php.net/manual/en/ref.datetime.php)
+    - [**Array functions**](https://www.w3schools.com/php/php_ref_array.asp)
+    
+    <aside>
+    💡 Pour afficher un array on utilise la fonction : print_r($array).
+    
+    </aside>
+    
+    <aside>
+    💡 la fonction var_dump($var) est très utile pour le débogage.
+    
+    </aside>
+    
+    <aside>
+    💡 la fonction echo et print sont très utilisé pour l'affichage.
+    
+    </aside>
+    
+1. Simulez le jeu du champ de tir. Ce jeu consiste à essayer de découvrir un nombre quelconque entre 1 et 100 inclus, tiré par l'ordinateur (la primitive rand(min, max) renvoie un entier entre min et max). L'utilisateur a droit à un maximum de huit essais. A chaque épreuve, vous devez afficher un message codé "nombre donné trop petit" ou "nombre donné trop grand". En conclusion, est "bravo, vous avez trouvé dans [nombre] test(s)" ou "désolé, le nombre était [valeur]".
+
+**Terminologies : `RAND()` `ifelse` `for` `concaténation`**  
+
+## Exercice 13 : (challenge) application web calculatrice
+
+Vous travaillez sur calculatrice. On vous donne tout le code de l'interface utilisateur, mais on vous demande de créer la fonction qui effectuera les calculs. Vous devez créer une fonction unique qui soit réutilisable pour tous les calculs nécessaires dans l'application.
+
+Les étapes suivantes vous aideront à réaliser l'activité :
+
+1. Créez une fonction **`factorielle`** qui calculera et retournera le **factoriel** du nombre d'entrée.
+2. Créez une fonction **`somme`** qui retournera la **somme** des nombres d'entrée (un nombre variable de paramètres).
+3. Créez une fonction `**nombrePremier**` qui évaluera un nombre entré, qui doit être un nombre entier et qui retournera si le nombre est un nombre premier ou non. Le type de retour de cette fonction est un booléen (`bool`).
+4. Créer une fonction `**performOperation**` de base qui traitera les opérations mathématiques prédéfinies mentionnées en dessus. Le premier paramètre de la fonction `**performOperation**` doit être une chaîne de caractères, soit "**`factorielle`**", soit "**`somme`**", soit "`**nombrePremier**`. Les arguments restants sont transmis à la fonction mathématique appelée en tant qu'arguments.
+
+**Terminologies : `declare(strict_types=1);` `while` `return array_sum` `func_get_args()` `for` `call_user_func_array`**
