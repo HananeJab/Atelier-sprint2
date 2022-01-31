@@ -15,4 +15,10 @@
 
 | Day | Chapter |
 |:---:|:---:|
-| [01](./Atelier_02/01.md)) | Langage SQL
+| [01](./Atelier_02/01.md)) | Langage SQL |
+
+### Atelier 2
+
+| Day | Chapter |
+|:---:|:---:|
+| [01](./Atelier_03/01.md)) | UML (Use Case, Diagramme de Classe, Diagramme de sequence) |
