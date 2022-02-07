@@ -22,3 +22,9 @@
 | Day | Chapter |
 |:---:|:---:|
 | [01](./Atelier_03/01.md) | UML (Use Case, Diagramme de Classe, Diagramme de sequence) |
+
+### Atelier 4
+
+| Day | Chapter |
+|:---:|:---:|
+| [01](./Atelier_04/01.md) | PHP Cookies & Sessions |
